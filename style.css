@@ -16,7 +16,7 @@ body {
 /* Классы для Header*/
 header {
   height: 110px;
-
+min-width: 375px;
   box-shadow: 0px 15px 20px 0px #0000000d;
 }
 .header-container {
@@ -36,6 +36,10 @@ header {
   font-weight: 700;
   line-height: 100%;
   cursor: pointer;
+  transition: 0.3s;
+}
+.logo:hover{
+    background-color: #062a57;
 }
 
 .cart-container {
@@ -48,8 +52,11 @@ header {
   background-color: #064087;
   border-radius: 0 0 7px 7px;
   cursor: pointer;
+  transition: 0.3s;
 }
-
+.cart-link:hover{
+    background-color: #062a57;
+}
 .cart-link img {
   padding: 33px 15px 27px 15px;
 }
@@ -80,7 +87,9 @@ header {
   letter-spacing: 0%;
   color: #575757;
 }
-
+main{
+    min-width: 375px;
+}
 .main-container h1 {
   font-weight: 800;
   font-size: 54px;
@@ -206,6 +215,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 375px;
 }
 .basement {
   text-transform: uppercase;
