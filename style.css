@@ -1,0 +1,243 @@
+/* Обнуление стилей*/
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Классы для Header*/
+header {
+  height: 110px;
+
+  box-shadow: 0px 15px 20px 0px #0000000d;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 234px;
+  height: 100%;
+}
+
+.logo {
+  background-color: #064087;
+  color: white;
+  align-self: center;
+  padding: 18px 70px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.cart-container {
+  display: flex;
+  gap: 26px;
+}
+
+.cart-link {
+  height: 95px;
+  background-color: #064087;
+  border-radius: 0 0 7px 7px;
+  cursor: pointer;
+}
+
+.cart-link img {
+  padding: 33px 15px 27px 15px;
+}
+.phone {
+  font-size: 14px;
+  font-weight: 700;
+  color: #064087;
+  align-self: center;
+  text-decoration: none;
+  line-height: 100%;
+}
+.phone span {
+  font-size: 22px;
+  line-height: 100%;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 74px 30px;
+}
+
+/* Классы для Main*/
+.menu {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #575757;
+}
+
+.main-container h1 {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #064087;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.good-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.image-container {
+  position: relative;
+  display: block;
+}
+
+.image-container .good-image {
+  width: 305px;
+  border-radius: 10px;
+}
+
+.image-container .mark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.good-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+.good-card {
+  width: 305px;
+  box-shadow: 0px 15px 20px 0px #0000000d;
+  border-radius: 10px;
+}
+.good-card img {
+  width: 305px;
+  height: 205px;
+}
+.options-container {
+  display: flex;
+}
+
+.button-container {
+  position: relative;
+  width: 100%;
+  height: 53px;
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 2px solid #f1f1f1;
+  margin-bottom: 20px;
+}
+.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #717171;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-right {
+  left: 50%;
+  color: #717171;
+  background-color: #ededed;
+}
+.good-description-container {
+  padding: 0 20px 39px 20px;
+}
+.good-description-container h2 {
+  margin-bottom: 10px;
+}
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.order-button {
+  padding: 17px 28px;
+  border-radius: 28px;
+  background: #ea5f0a;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.order-button:hover {
+  background: #a85420;
+}
+
+/* Футер  */
+footer {
+  height: 300px;
+  background: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basement {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #064087;
+}
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 762px) {
+  .header-container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 540px) {
+  .header-container {
+    padding: 0 20px;
+  }
+  .logo {
+    padding: 18px 20px;
+    font-size: 12px;
+  }
+  .phone {
+    font-size: 12px;
+  }
+  .phone span {
+    font-size: 15px;
+  }
+}
